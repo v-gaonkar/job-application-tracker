@@ -26,6 +26,18 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Column(name = "target_role")
+    private String targetRole;
+
+    @Column(name = "years_experience")
+    private Integer yearsExperience;
+
+    @Column(columnDefinition = "TEXT")
+    private String bio;
+
+    @Column
+    private String location;
+
     public enum Role {
         ADMIN,
         USER,
